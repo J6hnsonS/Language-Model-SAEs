@@ -1,6 +1,6 @@
 [project]
 name = "lm-saes"
-version = "2.0.0b6"
+version = "2.0.0b8"
 description = "For OpenMOSS Mechanistic Interpretability Team's Sparse Autoencoder (SAE) research. Open-sourced and constantly updated."
 dependencies = [
     "transformer-lens",
@@ -32,6 +32,7 @@ dependencies = [
     "typing-extensions>=4.13.2",
     "more-itertools>=10.7.0",
     "json-repair>=0.44.1",
+    "typeguard>=4.4.1",
 ]
 requires-python = "==3.11.*"
 readme = "README.md"
@@ -87,7 +88,6 @@ dev = [
     "plotly>=5.24.1",
     "pandas>=2.2.3",
     "pytest-mock>=3.14.0",
-    "typeguard>=4.4.1",
     "pyfakefs>=5.7.3",
     "mongomock>=4.3.0",
     "qwen-vl-utils>=0.0.10",
@@ -101,7 +101,7 @@ docs = [
     "mkdocs-gen-files>=0.5.0",
     "mkdocs-glightbox>=0.5.2",
     "mkdocs-literate-nav>=0.6.2",
-    "mkdocs-material>=9.6.22",
+    "mkdocs-material>=9.7.1",
     "mkdocs-section-index>=0.3.10",
     "mkdocstrings[python]>=0.30.1",
 ]
@@ -208,6 +208,6 @@ version_scheme = "pep440"
 version_provider = "uv"
 update_changelog_on_bump = true
 version_files = [
-    "README.md:pip install lm-saes=={version}",
-    "README.md:uv add lm-saes=={version}",
+    "README.md:pip install lm-saes==",
+    "README.md:uv add lm-saes==",
 ]
